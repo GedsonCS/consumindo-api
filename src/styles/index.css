@@ -1,0 +1,93 @@
+body{
+    background-color: var(--color-brand-1);
+}
+
+.hidden{
+    display: none;
+}
+.container_cabecalho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.Titulo{
+    color: var(--color-grey-3);
+    font-size: var(--title-4);
+    margin: 2rem 0;
+}
+
+.input_pesquisa::placeholder{
+    color: #7C8B99;
+}
+
+.container_cabecalho > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.input_pesquisa{
+    padding: 1rem 1.5rem;
+    color: #7C8B99;
+    background-color: #343A40;
+    border: none;
+    height: 51px;
+    border-radius: 8px
+}
+.Img_pesquisa{
+    background-color: #4C6EF5;
+    cursor: pointer;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px
+}
+
+.Container_Principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading{
+    color: #ADB5BD;
+    margin-top: 3rem;
+}
+
+.Lista_cards{
+    width: 100vw;
+}
+
+.Card{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    background-color: #383c44;
+    margin: 28px 7%;
+    border-radius: 8px;
+}
+
+.IMG_Card{
+    width: 60px;
+    height: 60px;
+}
+
+.Nome_Pokemon{
+    color: #CED4DA;
+    padding: 0 12px;
+}
+
+@media(min-width: 769px){
+    .container_cabecalho{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 7%;
+    }
+}
